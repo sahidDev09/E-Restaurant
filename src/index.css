@@ -28,3 +28,11 @@
   gap: 3rem;
 }
 
+.subs{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
