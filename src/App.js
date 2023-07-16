@@ -5,10 +5,12 @@ import MenuPage from "./Pages/MenuPage";
 import ContactPage from "./Pages/ContactPage";
 import CartPage from "./Pages/CartPage";
 import ErrorPage from "./Pages/ErrorPage";
+import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

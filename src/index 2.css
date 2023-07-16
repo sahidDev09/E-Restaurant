@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../public//Fonts//Roboto-Bold.ttf");
+}
+
+#maintext {
+  font-family: roboto;
+}
+
+#texteffect {
+  -webkit-text-fill-color: transparent;
+  color: #000;
+  -webkit-text-stroke-width: 2px;
+}
+
+.textnavlogo {
+  font-family: roboto;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.textnavlogo span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  color: red;
+}
+
+#card {
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 12px;
+  transition: height 0.5s ease-in-out;
+  margin-top: 70px;
+}
+
+#imgcard {
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+#card h2,
+#card p {
+  margin-bottom: 15px;
+}
+
+#card p {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.2s; /**to avoid jarks */
+}
+
+#buy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.2s; /*to avoid jarks*/
+}
+
+/* start hover and animation */
+
+#card_info {
+  height: 30px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+#card #imgcard {
+  transform: scale(0.9);
+  margin-top: -120px;
+}
+
+
+#card:hover #card_info {
+  height: 150px;
+  overflow: visible;
+}
+
+#card:hover p {
+  opacity: 1;
+}
+
+#card:hover #buy {
+  opacity: 1;
+}
+
+#card_info button {
+  text-transform: uppercase;
+}
+
+.searchform {
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  width: 30rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.searchform.active {
+  transform: scaleY(1);
+}
+
+.searchform input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #13131a;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.searchform label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: #13131a;
+}
+
+.searchform label:hover {
+  color: #ffc107;
+}

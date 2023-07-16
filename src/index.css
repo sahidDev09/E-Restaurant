@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: roboto;
+  src: url("../public/Fonts/Roboto-Bold.ttf");
+}
+
+.textnavlogo {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  color: red;
+}
+
+.restLogotext {
+  font-family: roboto;
+}
+
+.contact_form input{
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact_form{
+  gap: 3rem;
+}
+
