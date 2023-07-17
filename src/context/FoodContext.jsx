@@ -1,25 +1,38 @@
 import axios from "axios";
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
+import reducer from "../Reducer/FoodReducer";
 
 const AppContext = createContext();
 
-const API = "http://localhost:3001/foods"
+const API = "http://localhost:5500/foods";
+
+const initialstate = {
+  isLoading: false,
+  isError: false,
+  foods: [],
+  featureProducts: [],
+};
 
 const AppProvier = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initialstate);
 
+  const getFoods = async (url) => {
+    dispatch({ type: "SET_LOADING" });
+    try {
+      const res = await axios.get(url);
+      const foods = await res.data;
+      dispatch({ type: "SET_API_DATA", payload: foods });
+    } catch (error) {
+      dispatch({ type: "API_ERROR" });
+    }
+  };
 
-  const getFoods = async (url)=>{
-    const res = await axios.get(url);
-    console.log("🚀 ~file: FoodContext.jsx ~ line 10 ~ getProducts ~ res", res)
+  useEffect(() => {
+    getFoods(API);
+  }, []);
 
-  }
-
-    useEffect(()=>{
-      getFoods(API);
-    },[])
- 
   return (
-    <AppContext.Provider value={"sahid ahmed"}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
   );
 };
 
