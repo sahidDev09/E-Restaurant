@@ -1,9 +1,10 @@
-import React from 'react'
+import { useProductContext } from "../context/FoodContext";
 
 const AboutPage = () => {
-  return (
-    <div>AboutPage</div>
-  )
-}
 
-export default AboutPage
+  const myName = useProductContext( )
+
+  return <div className="text-5xl">{myName}</div>;
+};
+
+export default AboutPage;
