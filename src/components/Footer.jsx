@@ -20,7 +20,9 @@ const Footer = () => {
             <NavLink className="text-white" to="https://www.facebook.com/">
               <FaFacebook />
             </NavLink>
-            <NavLink className="text-white" to="https://www.instagram.com/accounts/login/">
+            <NavLink
+              className="text-white"
+              to="https://www.instagram.com/accounts/login/">
               <FaInstagram />
             </NavLink>
             <NavLink className=" text-white" to="https://www.linkedin.com/">
@@ -36,42 +38,48 @@ const Footer = () => {
 
       <section className=" pb-7">
         <div className=" sm:flex justify-around pb-5 text-gray-300">
-            <div>
-                <h1 className=" text-xl font-bold text-white">Owner's</h1>
-                <ul>
-                    <li>Sahid</li>
-                    <li>Joffie</li>
-                    <li>Ahmed</li>
-                </ul>
-            </div>
+          <div>
+            <h1 className=" text-xl font-bold text-white">Owner's</h1>
+            <ul>
+              <li>Sahid</li>
+              <li>Joffie</li>
+              <li>Ahmed</li>
+            </ul>
+          </div>
 
-            <div>
-                <h1 className="text-xl font-bold text-white">Best foods</h1>
-                <ul>
-                    <li>Pizza</li>
-                    <li>Burger</li>
-                    <li>Juice</li>
-                </ul>
-            </div>
+          <div>
+            <h1 className="text-xl font-bold text-white">Best foods</h1>
+            <ul>
+              <li>Pizza</li>
+              <li>Burger</li>
+              <li>Juice</li>
+            </ul>
+          </div>
 
-            <div>
-                <h1 className="text-xl font-bold text-white">Services</h1>
-                <ul>
-                    <li>Dine-in</li>
-                    <li>Home delivery</li>
-                    <li>Offers</li>
-                </ul>
-            </div>
+          <div>
+            <h1 className="text-xl font-bold text-white">Services</h1>
+            <ul>
+              <li>Dine-in</li>
+              <li>Home delivery</li>
+              <li>Offers</li>
+            </ul>
+          </div>
 
-            <div className="subs ">
-                <h1 className="text-xl font-bold text-white" >Subscribe us</h1>
-                <input className=" w-[100%] py-1 rounded-sm bg-transparent border-gray-50 border-[1px]" type="text" placeholder=" Enter your email" />
-                <input className=" w-[100%] bg-white text-black mt-3 py-1 rounded-sm" type="submit" value="Subscribe" />
-            </div>
-
+          <div className="subs ">
+            <h1 className="text-xl font-bold text-white">Subscribe us</h1>
+            <input
+              className=" w-[100%] py-1 rounded-sm bg-transparent border-gray-50 border-[1px]"
+              type="text"
+              placeholder=" Enter your email"
+            />
+            <input
+              className=" w-[100%] bg-white text-black mt-3 py-1 rounded-sm"
+              type="submit"
+              value="Subscribe"
+            />
+          </div>
         </div>
       </section>
-
     </footer>
   );
 };

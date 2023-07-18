@@ -23,12 +23,12 @@ const Hero = () => {
             <br /> commodi? Sit ducimus incidunt nam placeat.
           </p>
           <button className=" py-2 rounded-lg px-4 hover:bg-orange-500 transition-all text-white bg-orange-400  mt-7">
-            Explore Now <span className=" hover:animate-ping"> ▶️ </span>{" "}
+            Explore Now <span className=" hover:animate-ping"> ▶️ </span>
           </button>
         </div>
       </div>
     </section>
-  </div>;
+  </div>
 };
 
 export default Hero;

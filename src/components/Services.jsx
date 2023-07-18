@@ -22,8 +22,7 @@ const Services = () => {
               Soluta, eos.
             </p>
             <button className="mt-2 text-orange-400 transition-all hover:text-orange-500 hover:border-orange-500 border-b-4">
-              {" "}
-              See more{" "}
+              See more
             </button>
           </div>
         </div>
@@ -41,8 +40,7 @@ const Services = () => {
               adipisicing elit. Soluta, eos.
             </p>
             <button className="mt-2 text-orange-400 transition-all hover:text-orange-500 hover:border-orange-500 border-b-4">
-              {" "}
-              See more{" "}
+              See more
             </button>
           </div>
         </div>
@@ -60,14 +58,11 @@ const Services = () => {
               Soluta, eos.
             </p>
             <button className="mt-2 text-orange-400 transition-all hover:text-orange-500 hover:border-orange-500 border-b-4">
-              {" "}
-              See more{" "}
+              See more
             </button>
           </div>
         </div>
       </div>
-
-   
     </section>
   );
 };

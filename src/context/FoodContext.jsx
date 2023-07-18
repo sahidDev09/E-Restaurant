@@ -4,7 +4,7 @@ import reducer from "../Reducer/FoodReducer";
 
 const AppContext = createContext();
 
-const API = "http://localhost:5500/foods";
+const API ="https://api.pujakaitem.com/api/products";
 
 const initialstate = {
   isLoading: false,
@@ -21,6 +21,7 @@ const AppProvier = ({ children }) => {
     try {
       const res = await axios.get(url);
       const foods = await res.data;
+
       dispatch({ type: "SET_API_DATA", payload: foods });
     } catch (error) {
       dispatch({ type: "API_ERROR" });

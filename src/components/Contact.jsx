@@ -4,8 +4,7 @@ const Contact = () => {
   return (
     <div className=" container mx-auto">
       <h2 className=" text-2xl sm:text-3xl md:text-4xl text-center  m-10">
-        {" "}
-        Get in Touch{" "}
+        Get in Touch
       </h2>
 
       <iframe

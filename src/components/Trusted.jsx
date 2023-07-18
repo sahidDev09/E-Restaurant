@@ -10,8 +10,7 @@ const Trusted = () => {
     <>
       <div className=" container mx-auto bg-slate-100 p-10 rounded-lg">
         <h1 className=" text-center text-xl text-gray-500 ">
-          {" "}
-          Trusted by 1000+ Companies{" "}
+          Trusted by 1000+ Companies
         </h1>
         <div className="parant_div h-[60%] justify-evenly gap-7  grid sm:grid-cols-5 grid-cols-2 scale-75 items-center opacity-75">
           <div>
@@ -43,7 +42,6 @@ const Trusted = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };
