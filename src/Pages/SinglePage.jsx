@@ -45,11 +45,11 @@ const SinglePage = () => {
   return (
     <section className=" leading-8 text-sm">
       <PageNavigation title={name} />
-      <div className="mainparant grid grid-cols-2 container mx-auto items-center">
+      <div className="mainparant grid grid-cols-2 justify-between gap-10 container mx-auto items-center">
         {/* product for image */}
 
         <div className="foodsimg">
-          <MyImage imgs={image} />
+          <MyImage amazonImages={image} />
         </div>
 
         {/* foods data  */}
@@ -60,17 +60,12 @@ const SinglePage = () => {
           <p className=" text-gray-500 ">({reviews}) reviews </p>
           <p className="pricediv">
             <del>
-              <h1>
-                <FormatPrice price={price + 250000} />
-              </h1>
+              <FormatPrice price={price + 250000} />
             </del>
           </p>
-          <p>
-            <h1 className=" font-semibold text-orange-400">
-              {" "}
-              Discount Price :
-              <FormatPrice price={price} />
-            </h1>
+          <p className="font-semibold text-orange-400">
+            Discount Price :
+            <FormatPrice price={price} />
           </p>
           <p className=" leading-5 text-gray-400 mb-5">{description}</p>
           <div className=" flex justify-between bg-slate-100 p-2 rounded-md mb-5">
@@ -100,16 +95,16 @@ const SinglePage = () => {
 
           <div>
             <p className=" text-gray-400">
-              Available : 
-              <span className=" font-bold text-gray-600"> 
-                {stock > 0 ? " In Stock" : "Stock Out"} 
-              </span> 
+              Available :
+              <span className=" font-bold text-gray-600">
+                {stock > 0 ? " In Stock" : "Stock Out"}
+              </span>
             </p>
             <p className=" text-gray-400">
               ID : <span> {id} </span>
             </p>
             <p className=" text-gray-400">
-              Brand : <span> {company} </span> 
+              Brand : <span> {company} </span>
             </p>
           </div>
         </div>

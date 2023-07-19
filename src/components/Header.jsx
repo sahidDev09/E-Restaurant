@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <main>
       <header className="sm:p-0 container mx-auto items-center">
-        <nav className=" p-4 border-b-2 container mx-auto sm:flex justify-between items-center bg-white">
+        <nav className=" py-4 border-b-2 container mx-auto sm:flex justify-between items-center bg-white">
           <NavLink to="/">
             <h1 className=" restLogotext text-3xl text-center mb-5 sm:mb-0 text-cente sm:text-2xl md:text-3xl lg:text-3xl">
               Cheesy<span className="textnavlogo">.EAT</span>
