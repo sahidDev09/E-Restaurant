@@ -7,6 +7,7 @@ import CartPage from "./Pages/CartPage";
 import ErrorPage from "./Pages/ErrorPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SinglePage from "./Pages/SinglePage";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/singleproducts/:id" />
+        <Route path="/singleproducts/:id" element= {<SinglePage/>} />
         <Route path="/*" element={<ErrorPage />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>
