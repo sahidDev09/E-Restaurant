@@ -34,5 +34,20 @@
 }
 
 
+.cards {
+  position: relative;
+  min-width: 125px;
+  min-height: 125px;
+  background-color: #282828;
+  border-radius: 50px 10px 10px 10px;
+}
+
+.foodimg {
+  width: 170px;
+  position: relative;
+  top: -15px;
+  left: -10px;
+}
+
 
 

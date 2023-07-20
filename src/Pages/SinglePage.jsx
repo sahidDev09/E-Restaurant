@@ -7,6 +7,8 @@ import FormatPrice from "../Helpers/FormatPrice";
 import { TbTruckDelivery, TbReplaceFilled } from "react-icons/tb";
 import { GiFoodTruck } from "react-icons/gi";
 import { MdDinnerDining } from "react-icons/md";
+import Star from "../components/Star";
+import AddToCart from "../components/AddToCart";
 
 const API = "https://api.pujakaitem.com/api/products";
 
@@ -56,8 +58,7 @@ const SinglePage = () => {
 
         <div className="foodsinfo py-32">
           <h2 className=" sm:text-3xl font-bold uppercase ">{name}</h2>
-          <p className=" text-gray-500 mt-3">{stars}</p>
-          <p className=" text-gray-500 ">({reviews}) reviews </p>
+          <Star stars={stars} reviews={reviews} />
           <p className="pricediv">
             <del>
               <FormatPrice price={price + 250000} />
@@ -107,6 +108,8 @@ const SinglePage = () => {
               Brand : <span> {company} </span>
             </p>
           </div>
+          <hr className=" border-b-1 border-gray-300 my-2" />
+          {stock > 0 && <AddToCart product = {singleProduct} />}
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
   }
 
   return (
-    <>
+    <div className=" p-10 sm:p-0">
       <section className=" container mx-auto">
         <div className="my-8">
           <p className=" text-gray-400 uppercase">Check Now!</p>
@@ -27,7 +27,7 @@ const FeaturedProducts = () => {
           })}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
