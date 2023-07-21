@@ -45,9 +45,9 @@ const SinglePage = () => {
   }
 
   return (
-    <section className=" leading-8 text-sm">
+    <section className=" leading-8 text-sm p-10 sm:p-0">
       <PageNavigation title={name} />
-      <div className="mainparant grid grid-cols-2 justify-between gap-10 container mx-auto items-center">
+      <div className="mainparant grid sm:grid-cols-2 justify-between sm:gap-10 container mx-auto items-center">
         {/* product for image */}
 
         <div className="foodsimg">
@@ -56,7 +56,7 @@ const SinglePage = () => {
 
         {/* foods data  */}
 
-        <div className="foodsinfo py-32">
+        <div className="foodsinfo sm:py-32">
           <h2 className=" sm:text-3xl font-bold uppercase ">{name}</h2>
           <Star stars={stars} reviews={reviews} />
           <p className="pricediv">

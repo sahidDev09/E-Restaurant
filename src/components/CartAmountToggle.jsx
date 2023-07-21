@@ -6,7 +6,7 @@ const CartAmountToggle = ({amount, setDecrease, setIncrease}) => {
     <div>
         <div className="amount flex gap-3">
             <button className=' text-gray-500' onClick={()=>{setDecrease()}}> <FaMinus/> </button>
-            <p className=' text-xl font-bold'>{amount}</p>
+            <p className=' text-xl text-orange-400'>{amount}</p>
             <button className=' text-gray-500' onClick={()=>{setIncrease()}}> <FaPlus/> </button>
         </div>
     </div>

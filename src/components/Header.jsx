@@ -23,6 +23,7 @@ const Header = () => {
               className=" relative navbar-link cart-trolley--link transition-all hover:text-orange-500"
               to="/cart">
               <FiShoppingCart />
+              <span className="indicate">0</span>
             </NavLink>
           </div>
         </nav>
